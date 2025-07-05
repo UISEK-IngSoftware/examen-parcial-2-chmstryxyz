@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="detail">
+  <h2>{{ movie.title }}</h2>
+  <p>Año de publicación: {{ movie.year }}</p>
+  <p>Director: {{ movie.director }}</p>
+  <p>Género: {{ movie.genre }}</p>
+  <p>Sinopsis: {{ movie.synopsis }}</p>
+  <p><a href="{% url 'movie_list' %}">← Volver al listado</a></p>
+</div>
+{% endblock %}
